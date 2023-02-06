@@ -40,7 +40,7 @@ const App = () => {
     try {
       const data = await fetch(
         `http://api.weatherapi.com/v1/forecast.json?key=${WEATHER_API_KEY}&q=${
-          city || 'Chicago'
+          city || 'Los Angeles'
         }&days=1`,
       );
       const jsonData = await data.json();
